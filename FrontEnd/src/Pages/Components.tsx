@@ -74,7 +74,8 @@ const Components = () => {
      </Link>
     </div>
     <div  className="min-h-[80%] w-[100%] grid lg:grid-cols-4 gap-2 mt-9 md:grid-cols-2">
-      <div className="rounded-md h-[250px] shadow-md flex items-center flex-col hover:bg-[#F9FAFB] transition-all duration-300 cursor-pointer">
+     <Link to="/DashboardComp">
+     <div className="rounded-md h-[250px] shadow-md flex items-center flex-col hover:bg-[#F9FAFB] transition-all duration-300 cursor-pointer">
         <div className="w-[95%] h-[75%]">
             <img src={pix}  />
         </div>
@@ -83,6 +84,7 @@ const Components = () => {
           <div className="font-[grey] text-[13px] font-[500]">1 Component</div>
         </div>
       </div>
+     </Link>
       <div className="rounded-md h-[250px] shadow-md flex items-center flex-col hover:bg-[#F9FAFB] transition-all duration-300 cursor-pointer">
         <div className="w-[95%] h-[75%]">
             <img src={pix}  />

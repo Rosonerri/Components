@@ -8,6 +8,7 @@ import HeaderComp from "../Stacks/HeaderComp";
 import FormComp from "../Stacks/FormComp";
 import InputComp from "../Stacks/InputComp";
 import SearchComp from "../Stacks/SearchComp";
+import DashBoardComp from "../Stack2/DashBoard/DashBoardComp";
 
 export const mainRouter =  createBrowserRouter ([
 {
@@ -47,5 +48,9 @@ export const mainRouter =  createBrowserRouter ([
 {
     path: "/SearchComp",
     element: <SearchComp/>
-}
+},
+{
+    path: "/DashBoardComp",
+    element: <DashBoardComp/>
+},
 ])
