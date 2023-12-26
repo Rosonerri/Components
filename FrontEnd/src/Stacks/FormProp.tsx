@@ -1,15 +1,14 @@
 import img from "../assets/mark.svg"
-// import MagicInput from "../Components/MagicInput"
+import MagicInput from "../Components/MagicInput"
 import GlobalButton from "../Components/GlobalButton"
 import { NavLink, useNavigate } from "react-router-dom"
 import {useForm} from "react-hook-form"
 import * as yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { useState } from "react"
-import Input from "./Input"
 
 
-const Register = () => {
+const FormProp = () => {
   const navigate = useNavigate();
   const schema = yup.object({
     Name: yup.string().required("Must be filled"),
@@ -39,9 +38,9 @@ const {
         </div>
         <center className="text-[23px] w-full flex items-center justify-center">Create An Account</center>
       <div className="h-[110px] w-[100%] flex flex-col ">
-        <p className="font-[600] ml-[50px] ">Name</p>
-        <div className="w-full flex justify-center items">
-        <Input placeholder="Name" 
+        <p className="font-[600] ml-[70px] ">Name</p>
+        <div className="w-[80%] flex justify-center items border ml-[50px] rounded-md">
+        <input placeholder="Name" className="w-[90%] h-[35px] outline-none rounded-md"
         {...register("Name")}
         value={state}
         onChange={(e: any) => setState(e.target.value)}
@@ -52,9 +51,9 @@ const {
         )}
       </div>
       <div className="h-[110px] w-[100%] flex flex-col ">
-        <p className="font-[600] ml-[50px] ">Email</p>
-        <div className="w-full flex justify-center items">
-        <Input placeholder="Email"
+        <p className="font-[600] ml-[70px] ">Email</p>
+        <div className="w-[80%] flex justify-center items border ml-[50px] rounded-md">
+        <input placeholder="Email" className="w-[90%] h-[35px] outline-none rounded-md"
         {...register("email")}
         value={state}
         onChange={(e: any) => setState(e.target.value)}
@@ -65,9 +64,9 @@ const {
         )}
       </div>
       <div className="h-[110px] w-[100%] flex flex-col ">
-        <p className="font-[600] ml-[50px] ">Password</p>
-        <div className="w-full flex justify-center items">
-        <Input placeholder="Password"
+        <p className="font-[600] ml-[70px] ">Password</p>
+        <div className="w-[80%] flex justify-center items border ml-[50px] rounded-md">
+        <input placeholder="Password" className="w-[90%] h-[35px] outline-none rounded-md"
         {...register("password")}
         value={state}
         onChange={(e: any) => setState(e.target.value)}
@@ -78,9 +77,9 @@ const {
         )}
       </div>
       <div className="h-[110px] w-[100%] flex flex-col ">
-        <p className="font-[600] ml-[50px] ">Confirm Password</p>
-        <div className="w-full flex justify-center items">
-        <Input  placeholder="Confirm Password"
+        <p className="font-[600] ml-[70px] ">Confirm Password</p>
+        <div className="w-[80%] flex justify-center items border ml-[50px] rounded-md">
+        <input placeholder="Confirm Password" className="w-[90%] h-[35px] outline-none rounded-md"
         {...register("password")}
         value={state}
         onChange={(e: any) => setState(e.target.value)}
@@ -90,11 +89,10 @@ const {
         <div className="flex w-[85%] justify-end font-[200] text-[crimson]">{errors.confirm?.message}</div>
         )}
       </div>
+
       <div className="h-[80px] w-[100%] flex flex-col ">
         <div className="w-full flex item justify-center">
-      <GlobalButton buttonName="Register" className="bg-[#4F46E5] hover:bg-[#736ecd] hover:text-white w-[50%] text-[17px] font-[600] text-[white]" type="submit"/>
-     
-      {/* <button className="font-[700]" type="submit">Register</button> */}
+      <button className="font-[700] bg-[#4F46E5] py-2 px-[60px] rounded-md text-[white] hover:bg-[#8b87d0] transition-all duration-300 mb-[20px]" type="submit">Register</button>
         </div>
         <div className="flex w-[85%] justify-center font-[700] text-[black] ml-[30px] text-[11px]">Already have an account?
             <NavLink to="/login">
@@ -108,4 +106,4 @@ const {
   )
 }
 
-export default Register;
+export default FormProp;

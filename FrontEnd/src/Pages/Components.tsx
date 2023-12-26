@@ -39,33 +39,39 @@ const Components = () => {
         </div>
       </div>
      </Link>
-      <div className="rounded-md h-[250px] shadow-md flex items-center flex-col hover:bg-[#F9FAFB] transition-all duration-300 cursor-pointer">
-        <div className="w-[95%] h-[75%]">
-            <img src={pix}  />
-        </div>
-        <div className="w-[95%] h-[25%]">
-          <div className="font-[700] hover:text-[blue] transition-all duration-300">Dashbord Layouts</div>
-          <div className="font-[grey] text-[13px] font-[500]">10 Components</div>
-        </div>
-      </div>
-      <div className="rounded-md h-[250px] shadow-md flex items-center flex-col hover:bg-[#F9FAFB] transition-all duration-300 cursor-pointer">
+     <Link to="/FormComp">
+     <div className="rounded-md h-[250px] shadow-md flex items-center flex-col hover:bg-[#F9FAFB] transition-all duration-300 cursor-pointer">
         <div className="w-[95%] h-[75%]">
             <img src={pix}  />
         </div>
         <div className="w-[95%] h-[25%]">
           <div className="font-[700] hover:text-[blue] transition-all duration-300">Form Layouts</div>
-          <div className="font-[grey] text-[13px] font-[500]">4 Components</div>
+          <div className="font-[grey] text-[13px] font-[500]">10 Components</div>
         </div>
       </div>
-      <div className="rounded-md h-[250px] shadow-md flex items-center flex-col hover:bg-[#F9FAFB] transition-all duration-300 cursor-pointer">
+     </Link>
+     <Link to="/InputComp">
+     <div className="rounded-md h-[250px] shadow-md flex items-center flex-col hover:bg-[#F9FAFB] transition-all duration-300 cursor-pointer">
         <div className="w-[95%] h-[75%]">
             <img src={pix}  />
         </div>
         <div className="w-[95%] h-[25%]">
-          <div className="font-[700] hover:text-[blue] transition-all duration-300">Stack Layouts</div>
+          <div className="font-[700] hover:text-[blue] transition-all duration-300">Search Layouts</div>
+          <div className="font-[grey] text-[13px] font-[500]">4 Components</div>
+        </div>
+      </div>
+     </Link>
+     <Link to="/SearchComp">
+     <div className="rounded-md h-[250px] shadow-md flex items-center flex-col hover:bg-[#F9FAFB] transition-all duration-300 cursor-pointer">
+        <div className="w-[95%] h-[75%]">
+            <img src={pix}  />
+        </div>
+        <div className="w-[95%] h-[25%]">
+          <div className="font-[700] hover:text-[blue] transition-all duration-300">Input Layouts</div>
           <div className="font-[grey] text-[13px] font-[500]">11 Components</div>
         </div>
       </div>
+     </Link>
     </div>
     <div  className="min-h-[80%] w-[100%] grid lg:grid-cols-4 gap-2 mt-9 md:grid-cols-2">
       <div className="rounded-md h-[250px] shadow-md flex items-center flex-col hover:bg-[#F9FAFB] transition-all duration-300 cursor-pointer">

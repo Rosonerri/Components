@@ -5,6 +5,9 @@ import Register from "../Pages/Register";
 import Login from "../Pages/Login"
 import ResetPass from "../Pages/ResetPass"
 import HeaderComp from "../Stacks/HeaderComp";
+import FormComp from "../Stacks/FormComp";
+import InputComp from "../Stacks/InputComp";
+import SearchComp from "../Stacks/SearchComp";
 
 export const mainRouter =  createBrowserRouter ([
 {
@@ -32,5 +35,17 @@ export const mainRouter =  createBrowserRouter ([
 {
     path: "/HeaderComp",
     element: <HeaderComp/>
+},
+{
+    path: "/FormComp",
+    element: <FormComp/>
+},
+{
+    path: "/InputComp",
+    element: <InputComp/>
+},
+{
+    path: "/SearchComp",
+    element: <SearchComp/>
 }
 ])
